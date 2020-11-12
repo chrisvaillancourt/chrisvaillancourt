@@ -1,4 +1,6 @@
 import colors from 'vuetify/es5/util/colors'
+const { CI_PAGES_URL } = process.env
+const base = CI_PAGES_URL && new URL(CI_PAGES_URL).pathname
 
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
@@ -15,6 +17,16 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
+  generate: {
+    dir: 'public'
+  },
+  /*
+  * Customize the base url
+  */
+ router: {
+  base
+},
+
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [],
