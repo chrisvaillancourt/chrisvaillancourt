@@ -18,15 +18,14 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
   generate: {
-    dir: 'public'
+    dir: 'public',
   },
   /*
-  * Customize the base url
-  */
- router: {
-  base
-},
-
+   * Customize the base url
+   */
+  router: {
+    base,
+  },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [],
