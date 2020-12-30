@@ -894,6 +894,11 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@fontsource/inter@^4.0.1":
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/@fontsource/inter/-/inter-4.0.1.tgz#a7d8d7f50ce53059390ef5a416d44d1bf5368651"
+  integrity sha512-NjH736K+aj/egfrhqAqW3x9y+VdzIrsLYzKIZ1dpZDd2WsUiJ+DJC+TdIjIB1vZ4wmZdlF2VGlbe/ycRh+dpOw==
+
 "@fullhuman/postcss-purgecss@^2.1.2":
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/@fullhuman/postcss-purgecss/-/postcss-purgecss-2.3.0.tgz#50a954757ec78696615d3e118e3fee2d9291882e"
