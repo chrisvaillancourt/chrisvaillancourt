@@ -1,5 +1,5 @@
 <template functional>
-  <div class="bg-white dark:bg-gray-900 dark:text-white h-screen">
+  <div>
     <header class="flex flex-row">
       <NuxtLink to="/" class="mr-24">
         <h2>Chris Vaillancourt</h2>
@@ -18,6 +18,5 @@
         </ul>
       </nav>
     </header>
-    <nuxt />
   </div>
 </template>
