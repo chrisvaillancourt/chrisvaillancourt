@@ -1,5 +1,0 @@
-@import '@fontsource/inter';
-body {
-  @apply bg-white dark:bg-gray-900 dark:text-white;
-  font-family: 'Inter';
-}
