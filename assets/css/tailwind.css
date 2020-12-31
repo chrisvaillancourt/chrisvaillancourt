@@ -8,4 +8,7 @@
     @apply bg-white dark:bg-gray-900 dark:text-white;
     font-family: 'Inter';
   }
+  a {
+    @apply text-green-700 dark:text-green-500 hover:underline;
+  }
 }
