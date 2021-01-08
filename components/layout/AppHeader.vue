@@ -27,7 +27,10 @@
         </NuxtLink>
       </ul>
       <button class="md:hidden mr-8">
-        <AppIcon :icon="$options.static.icons.mdiMenu" />
+        <AppIcon
+          :icon="$options.static.icons.mdiMenu"
+          title="Navigation Menu"
+        />
       </button>
     </nav>
   </header>
