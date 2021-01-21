@@ -1,5 +1,7 @@
 # chrisvaillancourt
 
+A repo for my personal site.
+
 ## Build Setup
 
 ```bash
