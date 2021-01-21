@@ -19,6 +19,7 @@
     "@mdi/js": "^5.8.55",
     "@nuxt/content": "^1.11.1",
     "@nuxtjs/pwa": "^3.3.2",
+    "@tailwindcss/typography": "^0.4.0",
     "core-js": "^3.8.1",
     "nuxt": "^2.14.12"
   },
