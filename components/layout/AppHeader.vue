@@ -1,6 +1,6 @@
 <template>
   <header
-    class="flex flex-row justify-between md:justify-start dark:bg-gray-800 py-6 pl-8"
+    class="flex flex-row justify-between md:justify-start dark:bg-gray-800 py-6 pl-8 hidden"
   >
     <NuxtLink to="/" class="mr-24 dark:text-white dark:hover:text-green-500">
       <h2>Chris Vaillancourt</h2>
