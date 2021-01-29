@@ -53,5 +53,9 @@ export default {
   // Content module configuration (https://go.nuxtjs.dev/config-content)
   content: {},
   // Build Configuration (https://go.nuxtjs.dev/config-build)
-  build: {},
+  build: {
+    extractCSS: {
+      ignoreOrder: false, // Enable to remove warnings about conflicting order
+    },
+  },
 }
