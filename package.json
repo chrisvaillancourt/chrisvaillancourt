@@ -3,46 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "analyze": "nuxt build --analyze",
-    "dev": "nuxt",
-    "prebuild": "yarn run update_browserslist",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
-    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "lint": "yarn run lint:js",
-    "test": "jest",
-    "update_browserslist": "npx browserslist@latest --update-db"
-  },
-  "dependencies": {
-    "@fontsource/inter": "^4.0.1",
-    "@mdi/js": "^5.8.55",
-    "@nuxt/content": "^1.11.1",
-    "@nuxtjs/pwa": "^3.3.2",
-    "@tailwindcss/typography": "^0.4.0",
-    "core-js": "^3.8.1",
-    "nuxt": "^2.14.12"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.12.10",
-    "@babel/preset-env": "^7.12.11",
-    "@nuxtjs/eslint-config": "^3.1.0",
-    "@nuxtjs/eslint-module": "^2.0.0",
-    "@nuxtjs/tailwindcss": "^3.4.2",
-    "@tailwindcss/postcss7-compat": "^2.0.2",
-    "@vue/test-utils": "^1.1.2",
-    "autoprefixer": "^9",
-    "babel-core": "7.0.0-bridge.0",
-    "babel-eslint": "^10.1.0",
-    "babel-jest": "^26.5.0",
-    "eslint": "^7.15.0",
-    "eslint-config-prettier": "^6.12.0",
-    "eslint-plugin-nuxt": "^1.0.0",
-    "eslint-plugin-prettier": "^3.3.0",
-    "jest": "^26.5.0",
-    "postcss": "^7",
-    "prettier": "^2.2.1",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
-    "vue-jest": "^3.0.4"
+    "dev": "ELEVENTY_ENV=development npx @11ty/eleventy --config=eleventy.config.js --serve & webpack --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js && npx @11ty/eleventy --config=eleventy.config.js"
   }
 }
