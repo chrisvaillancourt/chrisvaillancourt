@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production postcss assets/styles/tailwind.css --o _site/style.css && cleancss _site/style.css -o _site/style.css",
-    "start": "eleventy --serve & postcss assets/styles/tailwind.css --o _site/style.css --watch",
+    "build": "ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production postcss assets/styles/tailwind.css --o _site/assets/styles/style.css && cleancss _site/assets/styles/style.css -o _site/assets/styles/style.css",
+    "start": "eleventy --serve & postcss assets/styles/tailwind.css --o _site/assets/styles/style.css --watch",
     "debug": "DEBUG=* eleventy"
   },
   "devDependencies": {
@@ -16,7 +16,11 @@
     "html-minifier": "^4.0.0",
     "postcss": "^8.2.4",
     "postcss-cli": "^8.3.1",
+    "postcss-import": "^14.0.0",
     "prettier": "^2.2.1",
     "tailwindcss": "^2.0.2"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^4.1.1"
   }
 }
