@@ -3,18 +3,17 @@ module.exports = {
   env: {
     browser: true,
     node: true,
+    es2020: true,
   },
   parserOptions: {
-    parser: 'babel-eslint',
+    sourceType: 'module',
+    ecmaVersion: 11,
   },
-  extends: [
-    '@nuxtjs',
-    'prettier',
-    'prettier/vue',
-    'plugin:prettier/recommended',
-    'plugin:nuxt/recommended',
-  ],
-  plugins: ['prettier'],
+  extends: ['eslint:recommended', 'prettier'],
   // add your custom rules here
-  rules: {},
-}
+  rules: {
+    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-new-wrappers': 'error',
+  },
+};
