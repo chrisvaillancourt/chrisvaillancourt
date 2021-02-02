@@ -4,9 +4,9 @@ frontend:
     preBuild:
       commands: ['yarn']
     build:
-      commands: ['yarn generate']
+      commands: ['yarn buld']
   artifacts:
-    baseDirectory: public
+    baseDirectory: _site
     files:
       - '**/*'
   cache:
