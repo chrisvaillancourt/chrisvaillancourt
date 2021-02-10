@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>
-      {% block title %}Chris Vaillancourt{% endblock %}
-    </title>
-    <meta charset="utf-8">
+    <title>{% block title %}Chris Vaillancourt{% endblock %}</title>
+    <meta charset="utf-8" />
     {% if description %}
-      <meta name="description" content="{{description}}"/>
+    <meta name="description" content="{{ description }}" />
     {% endif %}
-    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="./assets/styles/style.css?v={% version %}"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/style.css?v={% version %}" />
+    <link rel="stylesheet" href="./assets/styles/header.css?v={% version %}" />
     {% block head %}{% endblock %}
   </head>
   <body>
+    <header class="header">
+      <a href="/"><h1>Chris Vaillancourt</h1></a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"
+        ><span class="navicon"></span
+      ></label>
+      <ul class="menu">
+        <li><a href="/posts">Posts</a></li>
+        <li><a href="/tags">Tags</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+    </header>
+
     {% block content %}
-      {{ content | safe }}
+    {{ content | safe }}
     {% endblock %}
   </body>
 </html>
