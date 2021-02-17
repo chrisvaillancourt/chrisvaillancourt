@@ -8,6 +8,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     './node_modules/@fontsource/inter/files': '/assets/styles/files/',
   });
+  eleventyConfig.addPassthroughCopy({
+    './assets/static/favicon.ico': '/favicon.ico',
+  });
 
   eleventyConfig.addShortcode('version', function () {
     return String(Date.now());
