@@ -18,7 +18,8 @@
     "postcss-cli": "^8.3.1",
     "postcss-import": "^14.0.0",
     "prettier": "^2.2.1",
-    "tailwindcss": "^2.0.2"
+    "tailwindcss": "^2.0.2",
+    "tailwindcss-pseudo-elements": "^1.5.1"
   },
   "dependencies": {
     "@fontsource/inter": "^4.1.1"
