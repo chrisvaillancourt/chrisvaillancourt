@@ -11,4 +11,7 @@
   a {
     @apply text-green-700 dark:text-green-500 hover:underline;
   }
+  .header nav input:checked ~ ul {
+    @apply block;
+  }
 }

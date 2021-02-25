@@ -15,11 +15,13 @@
     <header class="header">
       <nav class="flex flex-row justify-between">
         <a href="/"><h1>Chris Vaillancourt</h1></a>
-        <input type="checkbox" id="menu-btn" />
-        <label for="menu-btn" class="cursor-pointer select-none"
-          ><span class="bg-green-700 h-2 w-4"></span
-        ></label>
-        <ul class="flex flex-row space-x-4 list-none">
+        <label for="menu-btn" class="cursor-pointer select-none md:hidden">
+          <span class="h-2 w-4">&#9776;</span>
+        </label>
+        <input type="checkbox" id="menu-btn" class="hidden" />
+        <ul
+          class="md:flex md:flex-row md:space-x-4 list-none hidden absolute left-2/3"
+        >
           <li>
             <a class="no-underline hover:no-underline" href="/posts">Posts</a>
           </li>
